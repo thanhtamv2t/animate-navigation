@@ -34,6 +34,7 @@ function App() {
       const isActive = activeKey === _index
       return <div className={cx("nav-item", isActive && 'active')} key={item.title} onClick={() => setActiveKey(_index)}>
         <div className="nav-item__icon">
+          {/* @ts-ignore */}
           <ion-icon name={item.icon}></ion-icon>
         </div>
         <div className="nav-item__title">
